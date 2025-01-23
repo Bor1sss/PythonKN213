@@ -1,4 +1,4 @@
-#!C:/Python313/python.exe
+#!C:/Users/solt2/AppData/Local/Programs/Python/Python313/python.exe
 
 # Диспетчер доступу - модуль програми, через який проходять усі запити.
 # Запити, що не проходять через нього не повинні обслуговуватися

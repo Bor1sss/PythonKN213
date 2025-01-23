@@ -1,4 +1,4 @@
-# !C:/Python313/python.exe
+# !C:/Users/solt2/AppData/Local/Programs/Python/Python313/python.exe
 import codecs
 import json
 import os
