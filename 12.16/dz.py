@@ -90,7 +90,7 @@ class UserDao:
             conn.commit()
 
         except mysql.connector.Error as err:
-            conn.rollback()  # Rollback in case of database errors
+            conn.rollback() 
             raise err
 
 def main():
@@ -104,16 +104,6 @@ def main():
             for row in cursor:
                 print(row)
 
-        # db = Db({
-        #     'host': 'localhost',
-        #     'port': 3308,
-        #     'user': 'py213_user',
-        #     'password': 'py213_pass',
-        #     'database': 'py_knp_213',
-        #     'charset': 'utf8mb4',
-        #     'collation': 'utf8mb4_unicode_ci',
-        # })
-        # print("DB connected")
 
     except mysql.connector.Error as err:
         print(f"Database connection error: {err}")
@@ -123,9 +113,7 @@ def main():
         print(f"Type error: {te}")
 
     userDao = UserDao(db)
-    # print( userDao ._ UserDao_db )
     try:
-    #    userDao.create_tables()
         pass
     except mysql.connector.Error as err:
         print(err)
